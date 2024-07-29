@@ -8,8 +8,8 @@ services:
     ports:
       - 5432:5432
     environment:
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
-
+      - POSTGRES_DB=osworks
     volumes:
-      - F:\mnt\DEV\docker-dados\postgresqldados:/var/opt/postgresql/data  
-      #F:\DEV\docker-dados\postgresqldados
+      - /mnt/DEV/docker-dados/postgresqldados:/var/opt/postgresql/data
